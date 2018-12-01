@@ -53,8 +53,10 @@
     "webpack-merge": "^4.1.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "dev": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "build:analyze": "cross-env ANALYZE=true node scripts/build.js"
+    "build:analyze": "cross-env ANALYZE=true node scripts/build.js",
+    "postinstall": "yarn build",
+    "start": "node server.js"
   }
 }
